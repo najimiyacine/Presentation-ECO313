@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse Économie Politique : Le Maroc</title>
+    <!-- Inclusion de la bibliothèque Mermaid pour les diagrammes -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'forest', securityLevel: 'loose' });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #1e2b3c;
+            line-height: 1.6;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-radius: 28px;
+            overflow: hidden;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            background: linear-gradient(145deg, #006233, #c1272d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+            border-left: 10px solid #c1272d;
+            padding-left: 20px;
+        }
+        .subhead {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-style: italic;
+            border-bottom: 2px solid #e0e7ef;
+            padding-bottom: 15px;
+            margin-left: 30px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+            border: 1px solid #e9eef3;
+            transition: all 0.2s;
+            break-inside: avoid;
+        }
+        .card:hover {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            border-color: #b0c4d9;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #cf142b;
+            padding-bottom: 12px;
+        }
+        .card-header h2 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: #002b5c;
+        }
+        .card-header .emoji {
+            font-size: 2.2rem;
+        }
+        .question-badge {
+            background: #f2f6fc;
+            border-left: 6px solid #006233;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            font-weight: 500;
+            color: #004d7c;
+            font-size: 1.1rem;
+            box-shadow: inset 0 1px 4px #cdd9e9;
+        }
+        .question-badge::before {
+            content: "❓ ";
+            font-size: 1.3rem;
+            margin-right: 8px;
+            color: #c1272d;
+        }
+        .mermaid-wrapper {
+            background: #fbfdff;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 1px dashed #8ba0bb;
+            text-align: center;
+            overflow-x: auto;
+        }
+        .indicator-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        .indicator {
+            background: #eef4ff;
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #003366;
+            border: 1px solid #aac3d9;
+        }
+        .data-highlight {
+            background: #f5e6e8;
+            color: #a1222d;
+            font-weight: 600;
+            padding: 2px 10px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .footnote {
+            background: #faf8f0;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            border: 1px solid #eedcc9;
+            margin-top: 30px;
+        }
+        hr {
+            margin: 30px 0 20px;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #aaa, transparent);
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        @media (max-width: 1000px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .full-width {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>⚙️ ÉCONOMIE POLITIQUE DU MAROC</h1>
+    <div class="subhead">Analyse stratégique · Intégration commerciale & financière</div>
+
+    <!-- PARTIE 1 : Présentation générale -->
+    <div class="card full-width" style="background: linear-gradient(145deg, #ffffff 0%, #f6faff 100%);">
+        <div class="card-header">
+            <span class="emoji"></span><h2>Première partie : Présentation générale de l'économie</h2>
+        </div>
+        <div class="question-badge">Présenter brièvement l’économie du pays en question, sa structure, ses exportations,…</div>
+        <p style="font-size:1.05rem; margin-bottom:20px;"><strong>Réponse :</strong> L'économie marocaine est émergente, diversifiée mais structurellement contrainte. Elle repose sur un triptyque : secteur primaire (agriculture, phosphates), secondaire (automobile, aéronautique, textile) et tertiaire (tourisme, télécoms, offshoring). Les exportations sont dominées par l'automobile (premier poste), l'agriculture, les phosphates et l'aéronautique. La balance commerciale est structurellement déficitaire, financée par les transferts des MRE, IDE et endettement extérieur.</p>
+        <div class="mermaid-wrapper">
+            <pre class="mermaid">
+            graph TD
+                subgraph "Structure de l'Économie Marocaine"
+                    A[Secteur Primaire] --> A1[Agriculture]
+                    A --> A2[Phosphates & Mines]
+                    A1 -- "Pilier Social" --> E[Exportations]
+                    A2 -- "Pilier Budgétaire" --> E
+                    B[Secteur Secondaire] --> B1[Automobile]
+                    B --> B2[Aéronautique]
+                    B --> B3[Textile & Cuir]
+                    B1 -- "1er poste export" --> E
+                    B2 -- "Hub régional" --> E
+                    C[Secteur Tertiaire] --> C1[Tourisme]
+                    C --> C2[Télécoms & Offshoring]
+                    C1 -- "Devises" --> E
+                    E --> F{Balance Commerciale Déficitaire}
+                    F --> G[Dépendance: Énergie, Biens d'équipement]
+                end
+                style A fill:#fef,stroke:#622
+                style B fill:#ccf,stroke:#226
+                style C fill:#cfc,stroke:#262
+            </pre>
+        </div>
+    </div>
+
+    <!-- PARTIE 2 : INTÉGRATION COMMERCIALE -->
+    <div class="card-header" style="margin-top:20px;"><span class="emoji"></span><h2>Deuxième partie – Dimension 1 : Intégration commerciale économique</h2></div>
+    <div class="grid-2">
+        <!-- CARD 1.1 : Groupement économique et accords -->
+        <div class="card">
+            <div class="question-badge">• L’économie fait-elle partie d’un groupement économique ? Lequel ? Forme et date d’adhésion ?</div>
+            <div class="question-badge">• L’économie a-t-elle un accord préférentiel avec une autre économie ou un groupement ?</div>
+            <p><strong>Réponse :</strong> Le Maroc est membre de plusieurs ensembles : Union du Maghreb Arabe (1989, suspendu), Ligue arabe / GAFTA (1998), COMESA (adhésion 2017). Il a signé des accords de libre-échange avec l’UE (2000), les États-Unis (2006), la Turquie (2006), les EAU (2003) et l’Accord d’Agadir (2004) avec l’Égypte, la Jordanie et la Tunisie. La forme dominante est la <strong>zone de libre-échange</strong>, pas d’union douanière complète.</p>
+            <div class="mermaid-wrapper">
+                <pre class="mermaid">
+                graph LR
+                    Maroc --> UE(Union Européenne - ALE 2000)
+                    Maroc --> US(USA - ALE 2006)
+                    Maroc --> Turquie(ALE 2006)
+                    Maroc --> Agadir(Accord d'Agadir 2004)
+                    Maroc --> COMESA(COMESA)
+                    Maroc --> GAFTA(Grande Zone Arabe)
+                    UE --> Principal[+/- 50% échanges]
+                </pre>
+            </div>
+        </div>
+
+        <!-- CARD 1.2 : OMC et tarifs -->
+        <div class="card">
+            <div class="question-badge">• Nature des relations avec l’OMC/GATT, engagements, tarifs appliqués vs NPF, comparaison USA / pays africain.</div>
+            <p><strong>Réponse :</strong> Membre du GATT (1987) et membre fondateur de l’OMC (1995). Tarif moyen appliqué ~12-15% (secteurs agricoles plus protégés). Tarif NPF consolidé élevé (~41%) donnant une marge de négociation. Comparaison : USA (3-5%), Nigeria (~12% mais plus instable).</p>
+            <div class="indicator-box">
+                <span class="indicator">Appliqué ~13%</span>
+                <span class="indicator">NPF consolidé 41%</span>
+                <span class="indicator">USA ~4%</span>
+                <span class="indicator">Nigeria ~12%</span>
+            </div>
+            <div class="question-badge">• Produits sensibles non concernés par les accords ? Pourquoi ?</div>
+            <p><strong>Réponse :</strong> Produits agricoles de base (céréales, viandes rouges, huile) et quelques produits industriels stratégiques. Raisons : sécurité alimentaire, protection des revenus ruraux, préservation du tissu productif local.</p>
+        </div>
+
+        <!-- CARD 1.3 : Règles d'origine et niveau d'intégration -->
+        <div class="card">
+            <div class="question-badge">• Quelles règles d’origine appliquées ?</div>
+            <p><strong>Réponse :</strong> Le Maroc utilise principalement le système <strong>paneuro-méditerranéen</strong> de cumul diagonal. Cela permet d’utiliser des intrants originaires de l’UE, Turquie, ou autres pays partenaires sans perdre le bénéfice de l’origine préférentielle. Favorise l’intégration productive régionale.</p>
+            <div class="question-badge">• Évaluer le niveau d’intégration commerciale avec le groupement (indicateur).</div>
+            <p><strong>Réponse :</strong> Indicateur le plus pertinent : <strong>taux de couverture des échanges avec l’UE</strong> et <strong>degré d’intégration dans les chaînes de valeur</strong>. Forte complémentarité mais asymétrie : importations de biens d’équipement, exportations de biens de consommation (automobile, textile, agricole). Indice de spécialisation montre concentration sur l’automobile.</p>
+            <span class="data-highlight">Part de l'UE dans les échanges : ≈ 50%</span>
+        </div>
+
+        <!-- CARD 1.4 : Stratégie gouvernementale et chaînes de valeur -->
+        <div class="card">
+            <div class="question-badge">• Est-ce que le gouvernement semble en retrait de sa stratégie d’ouverture ? Déclarations du Ministre ?</div>
+            <p><strong>Réponse :</strong> Discours de <strong>« révisionnisme stratégique »</strong> : souveraineté industrielle et alimentaire. Pas de repli protectionniste, mais volonté de renégocier certains accords pour plus de réciprocité et favoriser l’investissement productif local plutôt que le simple assemblage.</p>
+            <div class="question-badge">• Quelle présence du Maroc dans les chaînes de valeur mondiales ? Exemple.</div>
+            <p><strong>Réponse :</strong> Acteur stratégique régional. Exemple de l’<strong>automobile</strong> : écosystèmes complets (usines Renault à Tanger, équipementiers), intégration en amont et aval, premier exportateur automobile d’Afrique. Autre exemple : aéronautique (câblage, assemblage).</p>
+        </div>
+
+        <!-- CARD 1.5 : Avis société civile sur ouverture commerciale -->
+        <div class="card full-width" style="margin-top:10px;">
+            <div class="question-badge">• Avis de la société civile sur les accords commerciaux : favorable ? secteurs gagnants/perdants ? (revue presse/travaux empiriques)</div>
+            <p><strong>Réponse :</strong> Polarisation du débat. <strong>Gagnants :</strong> secteurs exportateurs (automobile, textile, agro-industrie), consommateurs urbains (biens importés moins chers). <strong>Perdants :</strong> petits agriculteurs (concurrence des produits européens subventionnés), industrie locale de substitution. Les syndicats dénoncent la précarisation ; le patronat demande plus de réciprocité ; les ONG alertent sur l’impact environnemental de l’agriculture intensive d’exportation.</p>
+            <div style="display:flex; gap:15px; flex-wrap:wrap;">
+                <span class="indicator">Syndicats : défiance</span>
+                <span class="indicator">Patronat (CGEM) : favorable avec clauses miroir</span>
+                <span class="indicator">ONG : critiques sur accaparement des terres/eau</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PARTIE 2 : INTÉGRATION FINANCIÈRE -->
+    <div class="card-header" style="margin-top:30px;"><span class="emoji"></span><h2>Deuxième partie – Dimension 2 : Intégration financière</h2></div>
+    <div class="grid-2">
+        <!-- CARD 2.1 : Réglementation des capitaux, classement, régime de change -->
+        <div class="card">
+            <div class="question-badge">• Quelle réglementation sur la circulation des flux de capitaux ?</div>
+            <p><strong>Réponse :</strong> Système asymétrique : entrées d’IDE et de portefeuille très libéralisées ; sorties de capitaux pour les résidents strictement contrôlées (change manuel) pour préserver les réserves.</p>
+            <div class="question-badge">• Comment le Maroc se classe à l’international en termes de libéralisation financière ?</div>
+            <p><strong>Réponse :</strong> Position intermédiaire. Bien classé pour l’ouverture aux IDE entrants (UNCTAD), faible sur la liberté des mouvements de capitaux pour les nationaux (Heritage/Index of Economic Freedom).</p>
+            <div class="question-badge">• Régime de change et évolution.</div>
+            <p><strong>Réponse :</strong> Jusqu’en 2018 : peg sur panier (€/$). Depuis 2018 : transition progressive vers un <strong>crawling peg</strong> (ancrage glissant avec bande élargie). Objectif : flexibilité accrue, résilience aux chocs.</p>
+        </div>
+
+        <!-- CARD 2.2 : IDE entrants/sortants, investissements portefeuille -->
+        <div class="card">
+            <div class="question-badge">• Niveau d’IDE entrants (secteurs, pays d’origine, évolution).</div>
+            <p><strong>Réponse :</strong> Flux stables 2–4 Mds $/an. Principaux investisseurs : France, UAE, Espagne. Secteurs : automobile, aéronautique, télécoms, immobilier.</p>
+            <div class="question-badge">• Niveau d’IDE sortants (secteurs, destinations).</div>
+            <p><strong>Réponse :</strong> Environ 0,5–1 Md $/an. Destinations : Afrique de l’Ouest (Côte d’Ivoire, Sénégal). Secteurs : banques, télécoms, assurances.</p>
+            <div class="question-badge">• Investissements de portefeuille entrants et sortants.</div>
+            <p><strong>Réponse :</strong> Entrants : volatils, essentiellement sur le marché obligataire (dette souveraine). Sortants : quasi nuls à cause du contrôle des changes.</p>
+            <span class="data-highlight">Stock IDE entrant ~ 65 Mds $</span>
+        </div>
+
+        <!-- CARD 2.3 : Jugement FMI (Art. IV) et historique des crises -->
+        <div class="card">
+            <div class="question-badge">• Jugement du FMI (Article IV) – réformes prônées.</div>
+            <p><strong>Réponse :</strong> Le FMI salue la stabilité macroéconomique, la résilience, les réformes. Recommande : poursuivre la flexibilité du change, élargir la base fiscale, réformer les entreprises publiques, plus d’inclusion.</p>
+            <div class="question-badge">• Le pays a-t-il été en cessation de paiement / crise ? Programmes FMI ?</div>
+            <p><strong>Réponse :</strong> Crise de la dette dans les années 1980 → PAS classiques. Printemps arabe (2011) → tensions sociales. COVID-19 → choc majeur. Le Maroc a sollicité plusieurs programmes : LPL (Ligne de Précaution et de Liquidité) depuis 2012 ; Instrument de Financement Rapide (2020, 1 Md $) ; Fonds pour la Résilience et la Durabilité (2023, 1,3 Md $) pour réformes climatiques.</p>
+            <span class="indicator">LPL 2012-... (renouvelée, ~3-5 Mds $)</span>
+        </div>
+
+        <!-- CARD 2.4 : Programmes de soutien post-COVID et conditionnalité -->
+        <div class="card">
+            <div class="question-badge">• Programmes de soutien/gestion de crise (période COVID et post-COVID) – noms, montants, conditionnalité.</div>
+            <p><strong>Réponse :</strong> 2020 : Instrument de Financement Rapide (1 Md $, sans conditionnalité). 2021 : nouvelle LPL. 2023 : prêt FRD (1,3 Md $) lié à des réformes climatiques. Conditionnalité LPL : ex-ante (pré-qualification), maintien des réformes structurelles.</p>
+        </div>
+    </div>
+
+    <!-- CARD FINALE : Avis société civile sur FMI et conditionnalité (full width) -->
+    <div class="card full-width" style="margin-top:20px; background:#f9f4ec;">
+        <div class="question-badge">• Avis de la société civile sur les programmes FMI (perception, conditionnalité). Prendre position sur la question de la conditionnalité.</div>
+        <p><strong>Réponse :</strong> La société civile est divisée. D'un côté, le FMI est vu comme un <strong>« label de qualité »</strong> rassurant les investisseurs, permettant un financement en période difficile. De l'autre, les stigmates des PAS des années 80-90 restent vifs : conditionnalité synonyme d’austérité (baisse des subventions, privatisations). Les nouveaux instruments comme la LPL atténuent cette perception car la conditionnalité est ex-ante. Néanmoins, les réformes (subventions, retraites) sont souvent attribuées aux injonctions du FMI, alimentant la défiance.</p>
+        <p><strong>Prise de position (forte de 50 ans d’expérience) :</strong> La relation Maroc-FMI a mûri. La conditionnalité s’est transformée : elle est aujourd’hui plus partenariale, axée sur la prévention et les réformes structurelles (climat, inclusion) plutôt que sur l’austérité punitive. Cependant, la pression de la « communauté financière » reste réelle. L’art du policymaking consiste à utiliser ces programmes comme des garde-fous sans perdre la souveraineté sur le rythme et l’accompagnement social des réformes. Le Maroc a su, jusqu’ici, maintenir cet équilibre.</p>
+    </div>
+
+    <hr />
+    <div class="footnote">
+         <strong>Synthèse :</strong> Le Maroc a construit un modèle d'intégration différenciée : hub commercial connecté à l'Europe, aux Amériques et à l'Afrique ; utilisation stratégique des instruments du FMI comme outils de crédibilisation. La tension actuelle se situe entre ouverture (source de croissance) et souveraineté/justice sociale. L'équilibre trouvé reste fragile mais pragmatique.
+    </div>
+</div>
+<!-- Crédit : analyse générée selon les spécifications, avec diagrammes Mermaid interactifs -->
+</body>
+</html>
